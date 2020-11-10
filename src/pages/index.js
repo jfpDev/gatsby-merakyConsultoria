@@ -1,21 +1,31 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
+
+import merakyLogo from '../images/merakylogo.png';
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
+    <section className="homeMeraky">
+      <div className="homeMeraky_title">
+        <p>MERAKY</p>
+        <p>CONSULTORÍA</p>
+      </div>
+      <div className="homeMeraky_paragraph">
+        <p>Consultoría para el desarrollo humano con impacto social</p>
+      </div>
+    </section>
+    <section className="homeMeraky_about">
+      <div className="homeMeraky_leftAbout"></div>
+      <div className="homeMeraky_rightAbout">
+        <img className="homeMeraky_logo" src={merakyLogo} alt="meraky logo" />
+      </div>
+      <p className="homeMeraky_pAbout">
+        Acompañamos en todo el proceso de empleabilidad
+      </p>
+    </section>
   </Layout>
 )
 

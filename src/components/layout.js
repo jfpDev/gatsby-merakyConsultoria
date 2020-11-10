@@ -7,39 +7,28 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+//import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
 
-const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
+import Instagram from '../images/instagram.png';
+import Facebook  from '../images/facebook.png';
 
+const Layout = ({ children }) => {
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
+      <Header/>
+      <div>
         <main>{children}</main>
-        <footer style={{
-          marginTop: `2rem`
-        }}>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
+        <footer>
+          <div className="footer_title">
+            <p>Sigue nuestras redes sociales</p>
+          </div>
+          <div className="footer_icons">
+            <a href="https://www.instagram.com/merakyconsultoria/"><img className="footer_imgs" src={Instagram} alt="instagram img" /></a>
+            <a href="https://www.facebook.com/merakyconsultoria/"><img className="footer_imgs" src={Facebook} alt="facebook img" /></a>
+          </div>
         </footer>
       </div>
     </>
