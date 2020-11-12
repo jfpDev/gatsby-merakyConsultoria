@@ -26,8 +26,7 @@ body {
 }
 
 header{
-  height: 150px;
-  width: auto;
+  height: 100px;
   background: black;
 }
 
@@ -40,15 +39,16 @@ header{
 
 .HeaderLogo{
   height: 100%;
+  width: 25%;
 }
 
-img{
+.headerLogo_img{
   height: 100%;
-  width: 150px;
+  width: 100%;
 }
 
 nav{
-  width: 50%;
+  width: 60%;
 }
 
 ul{
@@ -58,16 +58,16 @@ ul{
 
 .HeaderNavs{
   color: white;
-  font-size: 20px;
+  font-size: 15px;
   text-decoration: none;
 }
 
 .homeMeraky{
   background-image: url('../images/merakyhome.png');
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
   background-position: center;
-  min-height: 700px;
+  min-height: 500px;
   max-height: 800px;
   position: relative;
 }
@@ -77,7 +77,7 @@ ul{
   top: 40%;
   left: 7%;
   color: white;
-  font-size: 40px;
+  font-size: 35px;
   font-weight: bold;
   line-height: 46px;
 }
@@ -89,15 +89,13 @@ ul{
   background: yellow;
   width: 80%;
   padding-left: 5px;
-  height: 50px;
   display: flex;
   align-items: center;
 }
 
 .homeMeraky_about{
   position: relative;
-  min-height: 500px;
-  max-height: 1000px;
+  height: 500px;
   display: flex;
 }
 
@@ -110,6 +108,7 @@ ul{
   width: 60%;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 
 .homeMeraky_pAbout{
@@ -121,13 +120,14 @@ ul{
   width: 40%;
   padding: 10px;
   text-align: justify;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bold;
 }
 
 .homeMeraky_logo{
-  height: 100%;
+  height: 50%;
   width: auto;
+  flex-wrap: wrap;
 }
 
 footer{
@@ -136,7 +136,7 @@ footer{
 }
 
 .footer_title{
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bold;
   text-align: center;
   padding-top: 20px;
@@ -145,13 +145,11 @@ footer{
 
 .footer_icons{
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   padding-top: 10px;
 }
 
 .footer_imgs{
   height: 40px;
-  width: 30px;
-  margin-left: 5px;
-  margin-right: 5px;
+  width: 40px;
 }

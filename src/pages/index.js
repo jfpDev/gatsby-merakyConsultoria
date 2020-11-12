@@ -3,7 +3,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import merakyLogo from '../images/merakylogo.png';
+import merakyCompleto from '../images/merakycompleto.png';
 
 const IndexPage = () => (
   <Layout>
@@ -20,7 +20,7 @@ const IndexPage = () => (
     <section className="homeMeraky_about">
       <div className="homeMeraky_leftAbout"></div>
       <div className="homeMeraky_rightAbout">
-        <img className="homeMeraky_logo" src={merakyLogo} alt="meraky logo" />
+        <img className="homeMeraky_logo" src={merakyCompleto} alt="meraky logo" />
       </div>
       <p className="homeMeraky_pAbout">
         Acompañamos en todo el proceso de empleabilidad
