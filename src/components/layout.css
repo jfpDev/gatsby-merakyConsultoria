@@ -108,26 +108,69 @@ ul{
   width: 60%;
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  align-items: baseline;
 }
 
 .homeMeraky_pAbout{
   position: absolute;
-  top: 40%;
-  left:10%;
+  bottom: 15%;
+  left:5%;
   background: #dae7ac;
   color: #4f7d82;
-  width: 40%;
-  padding: 10px;
+  width: 90%;
+  padding: 20px;
   text-align: justify;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: bold;
 }
 
 .homeMeraky_logo{
   height: 50%;
   width: auto;
-  flex-wrap: wrap;
+  margin-top: 20%;
+}
+
+.homeServices{
+  heigh: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.homeServices_title{
+  align-self: center;
+  font-size: 30px;
+  width: 90%;
+  color: #95bd51;
+  border-bottom: 10px solid yellow;
+  margin-top: 30px;
+  padding-bottom: 10px;
+}
+
+.homeServices_content{
+  display: flex;
+  flex-direction: column;
+}
+
+.homeServices_contentMain{
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  width: 95%;
+  margin: 20px 0;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 20px 10px;
+}
+
+.homeServices_contentImg{
+  width: 55%;
+  height: 100%;
+}
+
+.homeServices_contentMessage{
+  width: 40%;
+  text-align: center;
+  display: flex;
+  align-items: center;
 }
 
 footer{
@@ -136,7 +179,7 @@ footer{
 }
 
 .footer_title{
-  font-size: 15px;
+  font-size: 18px;
   font-weight: bold;
   text-align: center;
   padding-top: 20px;
@@ -145,11 +188,12 @@ footer{
 
 .footer_icons{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   padding-top: 10px;
 }
 
 .footer_imgs{
   height: 40px;
   width: 40px;
+  margin: 0 20px;
 }

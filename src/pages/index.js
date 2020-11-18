@@ -4,6 +4,9 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 import merakyCompleto from '../images/merakycompleto.png';
+import Bienestar   from '../images/bienestar.png';
+import Empleabilidad from '../images/empleabilidad.png';
+import Orientacion from '../images/orientacion.png';
 
 const IndexPage = () => (
   <Layout>
@@ -25,6 +28,31 @@ const IndexPage = () => (
       <p className="homeMeraky_pAbout">
         Acompañamos en todo el proceso de empleabilidad
       </p>
+    </section>
+    <section className="homeServices">
+      <p className="homeServices_title">
+        SERVICIOS
+      </p>
+      <div className="homeServices_content">
+        <div className="homeServices_contentMain">
+          <img className="homeServices_contentImg" src={Orientacion} alt="orientacion img" />
+          <div className="homeServices_contentMessage">
+            <p>Orientación Vocacional</p>
+          </div>
+        </div>
+        <div className="homeServices_contentMain">
+          <img className="homeServices_contentImg" src={Empleabilidad} alt="empleabilidad img" />
+          <div className="homeServices_contentMessage">
+            <p>Mejora tu potencial de empleabilidad</p>
+          </div>
+        </div>
+        <div className="homeServices_contentMain">
+          <img className="homeServices_contentImg" src={Bienestar} alt="bienestar img" />
+          <div className="homeServices_contentMessage">
+            <p>Programa de bienestar laboral</p>
+          </div>
+        </div>
+      </div>
     </section>
   </Layout>
 )
