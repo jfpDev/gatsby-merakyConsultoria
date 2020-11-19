@@ -173,6 +173,56 @@ ul{
   align-items: center;
 }
 
+.contactInfo{
+  height: 500px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.contactInfo_img{
+  width: 100%;
+  height: 50%;
+}
+
+.contactInfo_bottom{
+  background: #dae7ac;
+  height: 50%;
+}
+
+
+.contactInfo_content{
+  width: 80%;
+  position: absolute;
+  bottom: 5%;
+  left: 8%;
+  background: yellow;
+  padding: 2%;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contactInfo_contentTitle{
+  border-bottom: 10px solid #90c536;
+  margin-top: 10px;
+  color: #4f7d82;
+  font-weight: bold;
+  text-align: right;
+}
+
+.contactInfo_contentInfo{
+  color: #3c95a8;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  text-align: right;
+}
+
+.contactInfo_contentInfo_title{
+  font-weight: bold;
+}
+
 footer{
   background: #30A8AA;
   min-height: 130px;
